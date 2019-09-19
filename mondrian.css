@@ -1,0 +1,152 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display:flex;
+}
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;
+	
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+
+.widecol{
+	width:65%;
+	height:100%;
+	display:flex;
+}
+ 
+.box{
+	width:100%;
+	height:calc(100%/2);
+	display:flex;
+}
+.narrowcol{
+	width:35%;
+	height:100%;
+}
+
+@media only screen and (max-width:1500px){
+	.box {
+		height:50%;
+		width:100%;
+	}
+	.widecol{
+		display:flex;
+		height:100%;
+		width:65%;
+	}
+	.narrowcol{
+		display:block;
+		width:35%;
+		height:100%;
+	}
+	.art{
+		content:url("images/cubo_grande.png");
+	}
+	.color1 {
+		background-color:#0D11A8;
+	}
+	
+	.color2{
+		background-color: #F50F0F;
+	}
+	/* The color class is controlling all the colors so I don't have to use extra uneeded classes to change the color when the page becomes responsive	*/
+	.color3{
+		background-color: #FAE317;
+	}
+}
+	
+@media only screen and (max-width: 900px) {
+	body{
+		display:block;
+	}
+	.box{
+		height:100%;
+		width:calc(100%/2);
+	}
+	.widecol{
+		display:flex;
+		height:65%;
+		width:100%;
+	}
+	.narrowcol{
+		display:flex;
+		width:100%;
+		height:35%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.box{
+		height:100%;
+		width:50%;
+	}
+	.widecol{
+		display:flex;
+		height:65%;
+		width:100%;
+	}
+	.narrowcol{
+		display:flex;
+		width:100%;
+		height:35%;
+	}
+	.art{
+		content:url("images/monet.jpg");
+	}
+	.color1 {
+		background-color:#248068;
+	}
+	
+	.color2{
+		background-color: #2366dc;
+	}
+	.color3{
+		background-color: #d57fb6;
+	}
+} 
+@media only screen and (max-width: 500px) {
+	 body{
+		display:flex;
+	}
+	 .box {
+		height:50%;
+		width:100%;
+	}
+	.widecol{
+		display:flex;
+		height:100%;
+		width:65%;
+	}
+	.narrowcol{
+		display:block;
+		width:35%;
+		height:100%;
+	}
+	.art{
+		content:url("images/monet.jpg");
+	}
+	.color1 {
+		background-color:#248068;
+	}
+	
+	.color2{
+		background-color: #2366dc;
+	}
+	.color3{
+		background-color: #d57fb6;
+	}
+ }
