@@ -4,6 +4,19 @@ body{
 	margin: 0;
 	display:flex;
 }
+.art{
+		content:url("images/cubo_grande.png");
+	}
+.color1 {
+		background-color:#0D11A8;
+	}
+	
+.color2{
+		background-color: #F50F0F;
+}
+.color3{
+		background-color: #FAE317;
+	}
 /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
 /* If you're using 'display: flex' this class can be used to easily center horizontally! */
 .center-horizontal {
